@@ -1,6 +1,7 @@
 #include<stdio.h> //inclusão de biblioteca
-
+//desafio xadrez iniciante
 int main(){
+    int movimentocavalo = 1;
     //Mover Bispo 5 casas na diagonal
     for (int i = 0; i < 5; i++)
     {
@@ -13,7 +14,7 @@ int main(){
         printf("Rainha para a esquerda\n", rainha);//imprime direção de movimento da rainha
         rainha++;
     }
-
+     printf("\n"); //pular linha
     int torre = 0;//variavel torre
 
     do
@@ -22,6 +23,19 @@ int main(){
         torre++;
 
     } while (torre < 5);//declara variavel torre
+    printf("\n"); //pular linha
+
+
+
+    while (movimentocavalo--)//decrementa a variavel
+    {
+       for (int i = 0; i < 2; i++)
+       {
+        printf("Cavalo anda Cima\n");//imprime loop externo
+       }
+        printf("Cavalo anda Direita\n");//imprime loop interno
+       
+    }
     
     
 
